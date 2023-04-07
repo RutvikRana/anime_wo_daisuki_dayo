@@ -27,5 +27,15 @@
 		<p>&copy; Your Name Here</p>
 	</footer>
 
+	<script>
+		fetch('https://api.myanimelist.net/v2/anime?q=one&limit=4', {
+		headers: {
+			'Authorization': 'Bearer 042f74f247b70865d6d8a09c96517b504b57424ee70ba51d2eb43f1beb3d36be'
+		}
+		})
+		.then(response => response.json())
+		.then(data => console.log(data));		
+	</script>		
+
 </body>
 </html>
